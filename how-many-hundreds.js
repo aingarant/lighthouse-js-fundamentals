@@ -1,0 +1,7 @@
+// function howManyHundreds(num) {
+//   return Math.floor(num / 100);
+// }
+
+const howManyHundreds = (num) => Math.floor(num / 100);
+
+console.log(howManyHundreds(92398));
