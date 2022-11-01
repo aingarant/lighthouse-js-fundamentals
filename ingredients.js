@@ -9,22 +9,36 @@ const ingredients = [
   "bananas",
 ];
 
-// Write a while loop that prints out the contents of ingredients:
-// let i = 0;
-// while (i < ingredients.length) {
-//   console.log(ingredients[i]);
-//   i++;
+// function ingredientsForLoop() {
+//   let output = "The banana bread ingredients are: \n\n";
+//   for (let i = 0; i < ingredients.length; i++) {
+//     output += "* " + ingredients[i] + "\n";
+//   }
+//   return output;
 // }
 
-// // Write a for loop that prints out the contents of ingredients:
-// for (i = 0; i < ingredients.length; i++) {
-//   console.log(ingredients[i]);
-// }
-
-// Write any loop (while or for) that prints out the contents of ingredients backwards:
-let i = ingredients.length;
-while (i > ingredients.length)
+function ingredientsWhileLoop()
 {
-  console.log(ingredients[i])
-  i--;
+  let i = 0;
+  let output = "The banana bread ingredients are: \n\n";
+  while (i < ingredients.length) {
+    output += "* " + ingredients[i] + "\n";
+    i++
+  }
+  return output;
+
+
 }
+
+// function ingredientsForLoopBackwards()
+// {
+
+// }
+
+// function ingredientsWhileLoopBackwards()
+// {
+
+// }
+
+// console.log(ingredientsForLoop(ingredients));
+console.log(ingredientsWhileLoop(ingredients));
