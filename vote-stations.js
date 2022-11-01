@@ -4,7 +4,7 @@ const stations = [
   ["Moose Mountain Community Centre", 45, "community centre"]
 ];
 
-function chooseStations() {
+function chooseStations(stations) {
   let goodStations = [];
   for (let station of stations) {
     const venueName = station[0];

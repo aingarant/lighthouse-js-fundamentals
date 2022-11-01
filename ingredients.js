@@ -9,7 +9,7 @@ const ingredients = [
   "bananas",
 ];
 
-// function ingredientsForLoop() {
+// function ingredientsForLoop(ingredients) {
 //   let output = "The banana bread ingredients are: \n\n";
 //   for (let i = 0; i < ingredients.length; i++) {
 //     output += "* " + ingredients[i] + "\n";
@@ -17,28 +17,38 @@ const ingredients = [
 //   return output;
 // }
 
-function ingredientsWhileLoop()
+// function ingredientsWhileLoop(ingredients) {
+//   let i = 0;
+//   let output = "The banana bread ingredients are: \n\n";
+//   while (i < ingredients.length) {
+//     output += "* " + ingredients[i] + "\n";
+//     i++
+//   }
+//   return output;
+// }
+
+// function ingredientsForLoopBackwards(ingredients) {
+//   let output = "The banana bread ingredients are: \n\n";
+//   for (let i = ingredients.length - 1; i >= 0; i--) {
+//     output += "* " + ingredients[i] + "\n";
+//   }
+//   return output;
+// }
+
+
+function ingredientsWhileLoopBackwards(ingredients)
 {
-  let i = 0;
   let output = "The banana bread ingredients are: \n\n";
-  while (i < ingredients.length) {
+  let i = ingredients.length-1;
+  while (i >= 0)
+  {
     output += "* " + ingredients[i] + "\n";
-    i++
+    i--
   }
   return output;
-
-
 }
 
-// function ingredientsForLoopBackwards()
-// {
-
-// }
-
-// function ingredientsWhileLoopBackwards()
-// {
-
-// }
-
 // console.log(ingredientsForLoop(ingredients));
-console.log(ingredientsWhileLoop(ingredients));
+// console.log(ingredientsWhileLoop(ingredients));
+// console.log(ingredientsForLoopBackwards(ingredients));
+console.log(ingredientsWhileLoopBackwards(ingredients));
