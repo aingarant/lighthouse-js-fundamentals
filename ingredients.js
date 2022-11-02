@@ -36,12 +36,10 @@ const ingredients = [
 // }
 
 
-function ingredientsWhileLoopBackwards(ingredients)
-{
+function ingredientsWhileLoopBackwards(ingredients) {
   let output = "The banana bread ingredients are: \n\n";
-  let i = ingredients.length-1;
-  while (i >= 0)
-  {
+  let i = ingredients.length - 1;
+  while (i >= 0) {
     output += "* " + ingredients[i] + "\n";
     i--
   }
