@@ -1,4 +1,4 @@
-const gabage = {
+const garbage = {
   waste: 4,
   recycling: 3,
   compost: 5
