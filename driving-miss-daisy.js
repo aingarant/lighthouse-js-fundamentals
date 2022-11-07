@@ -1,17 +1,32 @@
+const cars = [
+  {
+    time: 1568329654807,
+    speed: 40,
+  },
+  {
+    time: 1568329821632,
+    speed: 42,
+  },
+  {
+    time: 1568331115463,
+    speed: 35
+  }
+]
+
+const speed = 38
+
 function carPassing(cars, speed) {
-  let carsArray = []
+
 
   const newCar = {
     time: Date.now(),
     speed: speed
   }
 
-  carsArray.push(newCar)
+  cars.push(newCar)
 
-  return carsArray;
+  return cars;
 
 }
-console.log(carPassing({}, 23))
-console.log(carPassing({}, 43))
-console.log(carPassing({}, 65))
-console.log(carPassing({}, 38))
+console.log(carPassing(cars, speed))
+
