@@ -17,13 +17,10 @@ const speed = 38
 
 function carPassing(cars, speed) {
 
-
-  const newCar = {
+  cars.push({
     time: Date.now(),
     speed: speed
-  }
-
-  cars.push(newCar)
+  })
 
   return cars;
 
